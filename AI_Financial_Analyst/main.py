@@ -97,7 +97,7 @@ if assistant_option == "Financial Assistant":
             run = wait_on_run(run, thread)
             response_messages = get_response(thread)
             response = pretty_print(response_messages)
-            st.text_area("Response:", value=response, height=300)
+            st.text_area("Response:", value=response)
 
 elif assistant_option == "PDF Analyzer":
     st.title("PDF Analyzer  :mag:")
